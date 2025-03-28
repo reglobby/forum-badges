@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Forum Badges - Beautiful CSS Badges for Forums</title>
+  <link rel="stylesheet" href="css/demo.css">
+  <link rel="stylesheet" href="css/forum-badges.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Forum Badges</h1>
+      <p class="tagline">A collection of 60 beautiful, customizable forum badges/prefixes</p>
+    </div>
+  </header>
+  
+  <main class="container">
+    <section class="intro">
+      <h2>About Forum Badges</h2>
+      <p>Forum Badges is a lightweight, customizable CSS library that provides beautiful badges for forum user roles. With 60 different styles, you can easily implement badges for administrators, moderators, VIPs, and many more user types.</p>
+      
+      <div class="actions">
+        <a href="https://github.com/reglobby/forum-badges" class="btn btn-primary">View on GitHub</a>
+        <a href="https://www.npmjs.com/package/forum-badges" class="btn btn-secondary">Install via npm</a>
+      </div>
+    </section>
+    
+    <section class="usage">
+      <h2>Usage</h2>
+      <p>Using Forum Badges is simple. Include the CSS file in your project, then add the appropriate classes to your HTML elements:</p>
+      
+      <pre><code>&lt;link rel="stylesheet" href="path/to/forum-badges.min.css"&gt;
+
+&lt;span class="fb-badge fb-admin"&gt;Administrator&lt;/span&gt;
+&lt;span class="fb-badge fb-mod"&gt;Moderator&lt;/span&gt;</code></pre>
+    </section>
+    
+    <section class="badges-showcase">
+      <h2>All Badges</h2>
+      <p>Here's a showcase of all 60 badge styles included in the library:</p>
+      
+      <h3>Administrative Roles</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-admin">Administrator</span>
+          <code>.fb-admin</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-mod">Moderator</span>
+          <code>.fb-mod</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-super-mod">Super Moderator</span>
+          <code>.fb-super-mod</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-dev">Developer</span>
+          <code>.fb-dev</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-owner">Owner</span>
+          <code>.fb-owner</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-staff">Staff</span>
+          <code>.fb-staff</code>
+        </div>
+      </div>
+      
+      <h3>Special Status</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-vip">VIP</span>
+          <code>.fb-vip</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-donor">Donor</span>
+          <code>.fb-donor</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-premium">Premium</span>
+          <code>.fb-premium</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-sponsor">Sponsor</span>
+          <code>.fb-sponsor</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-beta">Beta Tester</span>
+          <code>.fb-beta</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-partner">Partner</span>
+          <code>.fb-partner</code>
+        </div>
+      </div>
+      
+      <h3>Achievement Badges</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-veteran">Veteran</span>
+          <code>.fb-veteran</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-expert">Expert</span>
+          <code>.fb-expert</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-helper">Helper</span>
+          <code>.fb-helper</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-contributor">Contributor</span>
+          <code>.fb-contributor</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-trusted">Trusted</span>
+          <code>.fb-trusted</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-pioneer">Pioneer</span>
+          <code>.fb-pioneer</code>
+        </div>
+      </div>
+      
+      <h3>Fun Badges</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-jester">Jester</span>
+          <code>.fb-jester</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-ninja">Ninja</span>
+          <code>.fb-ninja</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-wizard">Wizard</span>
+          <code>.fb-wizard</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-hero">Hero</span>
+          <code>.fb-hero</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-pirate">Pirate</span>
+          <code>.fb-pirate</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-robot">Robot</span>
+          <code>.fb-robot</code>
+        </div>
+      </div>
+      
+      <h3>Community Status</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-new">New Member</span>
+          <code>.fb-new</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-member">Member</span>
+          <code>.fb-member</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-regular">Regular</span>
+          <code>.fb-regular</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-active">Active</span>
+          <code>.fb-active</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-elite">Elite</span>
+          <code>.fb-elite</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-legendary">Legendary</span>
+          <code>.fb-legendary</code>
+        </div>
+      </div>
+      
+      <h3>Special Animated Badges</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-sparkle">Sparkle</span>
+          <code>.fb-sparkle</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-glow">Glow</span>
+          <code>.fb-glow</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-pulse">Pulse</span>
+          <code>.fb-pulse</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-rainbow">Rainbow</span>
+          <code>.fb-rainbow</code>
+        </div>
+      </div>
+      
+      <h3>More Themed Badges</h3>
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-hacker">Hacker</span>
+          <code>.fb-hacker</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-scientist">Scientist</span>
+          <code>.fb-scientist</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-artist">Artist</span>
+          <code>.fb-artist</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-musician">Musician</span>
+          <code>.fb-musician</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-gamer">Gamer</span>
+          <code>.fb-gamer</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-mentor">Mentor</span>
+          <code>.fb-mentor</code>
+        </div>
+      </div>
+      
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-innovator">Innovator</span>
+          <code>.fb-innovator</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-visionary">Visionary</span>
+          <code>.fb-visionary</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-explorer">Explorer</span>
+          <code>.fb-explorer</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-guide">Guide</span>
+          <code>.fb-guide</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-ambassador">Ambassador</span>
+          <code>.fb-ambassador</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-scholar">Scholar</span>
+          <code>.fb-scholar</code>
+        </div>
+      </div>
+      
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-champion">Champion</span>
+          <code>.fb-champion</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-guru">Guru</span>
+          <code>.fb-guru</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-founder">Founder</span>
+          <code>.fb-founder</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-manager">Manager</span>
+          <code>.fb-manager</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-designer">Designer</span>
+          <code>.fb-designer</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-tester">Tester</span>
+          <code>.fb-tester</code>
+        </div>
+      </div>
+      
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-supporter">Supporter</span>
+          <code>.fb-supporter</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-reviewer">Reviewer</span>
+          <code>.fb-reviewer</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-builder">Builder</span>
+          <code>.fb-builder</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-architect">Architect</span>
+          <code>.fb-architect</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-influencer">Influencer</span>
+          <code>.fb-influencer</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-creator">Creator</span>
+          <code>.fb-creator</code>
+        </div>
+      </div>
+      
+      <div class="badges-group">
+        <div class="badge-item">
+          <span class="fb-badge fb-strategist">Strategist</span>
+          <code>.fb-strategist</code>
+        </div>
+        <div class="badge-item">
+          <span class="fb-badge fb-leader">Leader</span>
+          <code>.fb-leader</code>
+        </div>
+      </div>
+    </section>
+    
+    <section class="customization">
+      <h2>Customization</h2>
+      <p>Forum Badges can be customized using CSS variables:</p>
+      
+      <pre><code>:root {
+  --fb-admin-color: #ff5555;
+  --fb-admin-bg: #333;
+  --fb-anim-speed: 3s;
+}</code></pre>
+      
+      <p>Or using the JavaScript API:</p>
+      
+      <pre><code>// Include the JS file
+&lt;script src="path/to/forum-badges.min.js"&gt;&lt;/script&gt;
+
+// Initialize with custom options
+ForumBadges.init({
+  animationSpeed: '3s',
+  colors: {
+    'primary': '#4a6cf7',
+    'secondary': '#f25f5c'
+  },
+  enableTooltips: true
+});</code></pre>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Forum Badges. MIT Licensed.</p>
+    </div>
+  </footer>
+  
+  <script src="js/forum-badges.min.js"></script>
+  <script>
+    // Initialize badges
+    ForumBadges.init();
+  </script>
+</body>
+</html>
