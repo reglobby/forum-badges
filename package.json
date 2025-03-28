@@ -1,0 +1,30 @@
+{
+  "name": "forum-badges",
+  "version": "1.0.0",
+  "description": "A collection of beautiful, customizable forum badges/prefixes for different user roles",
+  "main": "dist/forum-badges.js",
+  "style": "dist/forum-badges.css",
+  "scripts": {
+    "build": "node scripts/build.js",
+    "start": "node scripts/serve.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "forum",
+    "badges",
+    "prefixes",
+    "css",
+    "roles",
+    "administrator",
+    "moderator"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "cssnano": "^6.1.2",
+    "express": "^4.21.2",
+    "fs-extra": "^11.3.0",
+    "postcss": "^8.5.3"
+  }
+}

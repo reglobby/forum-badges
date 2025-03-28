@@ -1,0 +1,834 @@
+/**
+ * Forum Badges CSS Library
+ * v1.0.0
+ * A collection of beautiful, customizable forum badges/prefixes
+ */
+
+:root {
+  /* Base colors */
+  --fb-primary: #3498db;
+  --fb-secondary: #2ecc71;
+  --fb-danger: #e74c3c;
+  --fb-warning: #f39c12;
+  --fb-info: #1abc9c;
+  --fb-light: #ecf0f1;
+  --fb-dark: #34495e;
+  --fb-gold: #f1c40f;
+  --fb-silver: #bdc3c7;
+  --fb-bronze: #cd7f32;
+  
+  /* Animation speeds */
+  --fb-anim-speed: 2s;
+}
+
+/* Base badge style */
+.fb-badge {
+  display: inline-block;
+  padding: 0.25em 0.75em;
+  margin: 0 0.25em;
+  border-radius: 3px;
+  font-size: 0.85em;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  vertical-align: middle;
+  line-height: 1.4;
+}
+
+.fb-badge:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+/* Administrative Roles */
+
+/* 1. Administrator */
+.fb-admin {
+  background: linear-gradient(135deg, #d50000, #9b0000);
+  color: white;
+  border-left: 3px solid #ff8a80;
+}
+
+.fb-admin::before {
+  content: "★";
+  margin-right: 0.3em;
+}
+
+/* 2. Moderator */
+.fb-mod {
+  background: linear-gradient(135deg, #2979ff, #1565c0);
+  color: white;
+  border-left: 3px solid #82b1ff;
+}
+
+.fb-mod::before {
+  content: "⚙";
+  margin-right: 0.3em;
+}
+
+/* 3. Super Moderator */
+.fb-super-mod {
+  background: linear-gradient(135deg, #651fff, #4527a0);
+  color: white;
+  border-left: 3px solid #b388ff;
+}
+
+.fb-super-mod::before {
+  content: "⚡";
+  margin-right: 0.3em;
+}
+
+/* 4. Developer */
+.fb-dev {
+  background: linear-gradient(135deg, #00b0ff, #0091ea);
+  color: white;
+  border-left: 3px solid #80d8ff;
+}
+
+.fb-dev::before {
+  content: "{ }";
+  margin-right: 0.3em;
+}
+
+/* 5. Owner */
+.fb-owner {
+  background: linear-gradient(135deg, #aa00ff, #7200ca);
+  color: white;
+  border-left: 3px solid #e040fb;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.fb-owner::before {
+  content: "👑";
+  margin-right: 0.3em;
+}
+
+/* 6. Staff */
+.fb-staff {
+  background: linear-gradient(135deg, #00bfa5, #00897b);
+  color: white;
+  border-left: 3px solid #64ffda;
+}
+
+.fb-staff::before {
+  content: "✓";
+  margin-right: 0.3em;
+}
+
+/* Special Status */
+
+/* 7. VIP */
+.fb-vip {
+  background: linear-gradient(135deg, #ffd600, #ffab00);
+  color: #5d4037;
+  border-left: 3px solid #ffff00;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.fb-vip::before {
+  content: "★";
+  margin-right: 0.3em;
+}
+
+/* 8. Donor */
+.fb-donor {
+  background: linear-gradient(135deg, #c0ca33, #9e9d24);
+  color: white;
+  border-left: 3px solid #f4ff81;
+}
+
+.fb-donor::before {
+  content: "♥";
+  margin-right: 0.3em;
+}
+
+/* 9. Premium */
+.fb-premium {
+  background: linear-gradient(135deg, #ff6f00, #e65100);
+  color: white;
+  border-left: 3px solid #ffd180;
+}
+
+.fb-premium::before {
+  content: "⭐";
+  margin-right: 0.3em;
+}
+
+/* 10. Sponsor */
+.fb-sponsor {
+  background: linear-gradient(135deg, #1de9b6, #00bfa5);
+  color: #004d40;
+  border-left: 3px solid #a7ffeb;
+}
+
+.fb-sponsor::before {
+  content: "💎";
+  margin-right: 0.3em;
+}
+
+/* 11. Beta Tester */
+.fb-beta {
+  background: linear-gradient(135deg, #7c4dff, #6200ea);
+  color: white;
+  border-left: 3px solid #b388ff;
+}
+
+.fb-beta::before {
+  content: "β";
+  margin-right: 0.3em;
+}
+
+/* 12. Partner */
+.fb-partner {
+  background: linear-gradient(135deg, #00e5ff, #00b8d4);
+  color: #006064;
+  border-left: 3px solid #84ffff;
+}
+
+.fb-partner::before {
+  content: "🤝";
+  margin-right: 0.3em;
+}
+
+/* Achievement Badges */
+
+/* 13. Veteran */
+.fb-veteran {
+  background: linear-gradient(135deg, #455a64, #263238);
+  color: white;
+  border-left: 3px solid #90a4ae;
+}
+
+.fb-veteran::before {
+  content: "🏆";
+  margin-right: 0.3em;
+}
+
+/* 14. Expert */
+.fb-expert {
+  background: linear-gradient(135deg, #5d4037, #3e2723);
+  color: white;
+  border-left: 3px solid #a1887f;
+}
+
+.fb-expert::before {
+  content: "🧠";
+  margin-right: 0.3em;
+}
+
+/* 15. Helper */
+.fb-helper {
+  background: linear-gradient(135deg, #43a047, #2e7d32);
+  color: white;
+  border-left: 3px solid #aed581;
+}
+
+.fb-helper::before {
+  content: "👋";
+  margin-right: 0.3em;
+}
+
+/* 16. Contributor */
+.fb-contributor {
+  background: linear-gradient(135deg, #039be5, #0277bd);
+  color: white;
+  border-left: 3px solid #81d4fa;
+}
+
+.fb-contributor::before {
+  content: "✏️";
+  margin-right: 0.3em;
+}
+
+/* 17. Trusted */
+.fb-trusted {
+  background: linear-gradient(135deg, #00acc1, #0097a7);
+  color: white;
+  border-left: 3px solid #80deea;
+}
+
+.fb-trusted::before {
+  content: "🛡️";
+  margin-right: 0.3em;
+}
+
+/* 18. Pioneer */
+.fb-pioneer {
+  background: linear-gradient(135deg, #f57f17, #e65100);
+  color: white;
+  border-left: 3px solid #ffd180;
+}
+
+.fb-pioneer::before {
+  content: "🚩";
+  margin-right: 0.3em;
+}
+
+/* Fun Badges */
+
+/* 19. Jester */
+.fb-jester {
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  color: white;
+  border-left: 3px solid #f8bbd0;
+}
+
+.fb-jester::before {
+  content: "🃏";
+  margin-right: 0.3em;
+}
+
+/* 20. Ninja */
+.fb-ninja {
+  background: linear-gradient(135deg, #212121, #000000);
+  color: white;
+  border-left: 3px solid #9e9e9e;
+}
+
+.fb-ninja::before {
+  content: "⚔️";
+  margin-right: 0.3em;
+}
+
+/* 21. Wizard */
+.fb-wizard {
+  background: linear-gradient(135deg, #7b1fa2, #4a148c);
+  color: white;
+  border-left: 3px solid #ce93d8;
+}
+
+.fb-wizard::before {
+  content: "🧙";
+  margin-right: 0.3em;
+}
+
+/* 22. Hero */
+.fb-hero {
+  background: linear-gradient(135deg, #f44336, #c62828);
+  color: white;
+  border-left: 3px solid #ffcdd2;
+}
+
+.fb-hero::before {
+  content: "🦸";
+  margin-right: 0.3em;
+}
+
+/* 23. Pirate */
+.fb-pirate {
+  background: linear-gradient(135deg, #795548, #4e342e);
+  color: white;
+  border-left: 3px solid #bcaaa4;
+}
+
+.fb-pirate::before {
+  content: "☠️";
+  margin-right: 0.3em;
+}
+
+/* 24. Robot */
+.fb-robot {
+  background: linear-gradient(135deg, #78909c, #546e7a);
+  color: white;
+  border-left: 3px solid #cfd8dc;
+}
+
+.fb-robot::before {
+  content: "🤖";
+  margin-right: 0.3em;
+}
+
+/* Community Status */
+
+/* 25. New Member */
+.fb-new {
+  background: linear-gradient(135deg, #b3e5fc, #81d4fa);
+  color: #01579b;
+  border-left: 3px solid #e1f5fe;
+}
+
+.fb-new::before {
+  content: "🔰";
+  margin-right: 0.3em;
+}
+
+/* 26. Member */
+.fb-member {
+  background: linear-gradient(135deg, #90caf9, #64b5f6);
+  color: #0d47a1;
+  border-left: 3px solid #bbdefb;
+}
+
+.fb-member::before {
+  content: "👤";
+  margin-right: 0.3em;
+}
+
+/* 27. Regular */
+.fb-regular {
+  background: linear-gradient(135deg, #42a5f5, #1e88e5);
+  color: white;
+  border-left: 3px solid #90caf9;
+}
+
+.fb-regular::before {
+  content: "✓";
+  margin-right: 0.3em;
+}
+
+/* 28. Active */
+.fb-active {
+  background: linear-gradient(135deg, #26c6da, #00acc1);
+  color: white;
+  border-left: 3px solid #80deea;
+}
+
+.fb-active::before {
+  content: "🔄";
+  margin-right: 0.3em;
+}
+
+/* 29. Elite */
+.fb-elite {
+  background: linear-gradient(135deg, #5c6bc0, #3949ab);
+  color: white;
+  border-left: 3px solid #9fa8da;
+}
+
+.fb-elite::before {
+  content: "💯";
+  margin-right: 0.3em;
+}
+
+/* 30. Legendary */
+.fb-legendary {
+  background: linear-gradient(135deg, #ffb300, #ff8f00);
+  color: #4e342e;
+  border-left: 3px solid #ffe082;
+}
+
+.fb-legendary::before {
+  content: "🏅";
+  margin-right: 0.3em;
+}
+
+/* Special Animated Badges */
+
+/* 31. Sparkle Badge */
+.fb-sparkle {
+  background: linear-gradient(135deg, #9c27b0, #673ab7);
+  color: white;
+  border-left: 3px solid #e1bee7;
+  animation: sparkle var(--fb-anim-speed) infinite alternate;
+}
+
+.fb-sparkle::before {
+  content: "✨";
+  margin-right: 0.3em;
+}
+
+@keyframes sparkle {
+  0% {
+    box-shadow: 0 0 5px rgba(156, 39, 176, 0.5);
+  }
+  100% {
+    box-shadow: 0 0 15px rgba(156, 39, 176, 0.8);
+  }
+}
+
+/* 32. Glowing Badge */
+.fb-glow {
+  background: linear-gradient(135deg, #ff5722, #e64a19);
+  color: white;
+  border-left: 3px solid #ffccbc;
+  animation: glow var(--fb-anim-speed) infinite alternate;
+}
+
+.fb-glow::before {
+  content: "🔆";
+  margin-right: 0.3em;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  100% {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 0 0 15px rgba(255, 255, 255, 0.5);
+  }
+}
+
+/* 33. Pulse Badge */
+.fb-pulse {
+  background: linear-gradient(135deg, #f44336, #d32f2f);
+  color: white;
+  border-left: 3px solid #ef9a9a;
+  animation: pulse var(--fb-anim-speed) infinite;
+}
+
+.fb-pulse::before {
+  content: "❤️";
+  margin-right: 0.3em;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* 34. Rainbow Badge */
+.fb-rainbow {
+  background: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+  color: white;
+  border-left: 3px solid white;
+  animation: rainbow 5s linear infinite;
+}
+
+.fb-rainbow::before {
+  content: "🌈";
+  margin-right: 0.3em;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+/* More Themed Badges */
+
+/* 35. Hacker */
+.fb-hacker {
+  background: #000;
+  color: #0f0;
+  font-family: monospace;
+  border-left: 3px solid #0f0;
+}
+
+.fb-hacker::before {
+  content: ">";
+  margin-right: 0.3em;
+}
+
+/* 36. Scientist */
+.fb-scientist {
+  background: linear-gradient(135deg, #bbdefb, #90caf9);
+  color: #0d47a1;
+  border-left: 3px solid #2196f3;
+}
+
+.fb-scientist::before {
+  content: "🔬";
+  margin-right: 0.3em;
+}
+
+/* 37. Artist */
+.fb-artist {
+  background: linear-gradient(135deg, #ce93d8, #ab47bc);
+  color: white;
+  border-left: 3px solid #f3e5f5;
+}
+
+.fb-artist::before {
+  content: "🎨";
+  margin-right: 0.3em;
+}
+
+/* 38. Musician */
+.fb-musician {
+  background: linear-gradient(135deg, #80deea, #26c6da);
+  color: #006064;
+  border-left: 3px solid #e0f7fa;
+}
+
+.fb-musician::before {
+  content: "🎵";
+  margin-right: 0.3em;
+}
+
+/* 39. Gamer */
+.fb-gamer {
+  background: linear-gradient(135deg, #5e35b1, #4527a0);
+  color: white;
+  border-left: 3px solid #b39ddb;
+}
+
+.fb-gamer::before {
+  content: "🎮";
+  margin-right: 0.3em;
+}
+
+/* 40. Mentor */
+.fb-mentor {
+  background: linear-gradient(135deg, #8d6e63, #6d4c41);
+  color: white;
+  border-left: 3px solid #d7ccc8;
+}
+
+.fb-mentor::before {
+  content: "📚";
+  margin-right: 0.3em;
+}
+
+/* 41. Innovator */
+.fb-innovator {
+  background: linear-gradient(135deg, #00c853, #00a040);
+  color: white;
+  border-left: 3px solid #b9f6ca;
+}
+
+.fb-innovator::before {
+  content: "💡";
+  margin-right: 0.3em;
+}
+
+/* 42. Visionary */
+.fb-visionary {
+  background: linear-gradient(135deg, #00bfa5, #008e76);
+  color: white;
+  border-left: 3px solid #a7ffeb;
+}
+
+.fb-visionary::before {
+  content: "👁️";
+  margin-right: 0.3em;
+}
+
+/* 43. Explorer */
+.fb-explorer {
+  background: linear-gradient(135deg, #ffb74d, #ff9800);
+  color: #4e342e;
+  border-left: 3px solid #ffe0b2;
+}
+
+.fb-explorer::before {
+  content: "🧭";
+  margin-right: 0.3em;
+}
+
+/* 44. Guide */
+.fb-guide {
+  background: linear-gradient(135deg, #a5d6a7, #81c784);
+  color: #1b5e20;
+  border-left: 3px solid #e8f5e9;
+}
+
+.fb-guide::before {
+  content: "🧗";
+  margin-right: 0.3em;
+}
+
+/* 45. Ambassador */
+.fb-ambassador {
+  background: linear-gradient(135deg, #4fc3f7, #29b6f6);
+  color: #01579b;
+  border-left: 3px solid #e1f5fe;
+}
+
+.fb-ambassador::before {
+  content: "🌐";
+  margin-right: 0.3em;
+}
+
+/* 46. Scholar */
+.fb-scholar {
+  background: linear-gradient(135deg, #fff176, #ffee58);
+  color: #f57f17;
+  border-left: 3px solid #fffde7;
+}
+
+.fb-scholar::before {
+  content: "🎓";
+  margin-right: 0.3em;
+}
+
+/* 47. Champion */
+.fb-champion {
+  background: linear-gradient(135deg, #ffd54f, #ffca28);
+  color: #e65100;
+  border-left: 3px solid #fff8e1;
+}
+
+.fb-champion::before {
+  content: "🏆";
+  margin-right: 0.3em;
+}
+
+/* 48. Guru */
+.fb-guru {
+  background: linear-gradient(135deg, #ba68c8, #ab47bc);
+  color: white;
+  border-left: 3px solid #e1bee7;
+}
+
+.fb-guru::before {
+  content: "☯️";
+  margin-right: 0.3em;
+}
+
+/* 49. Founder */
+.fb-founder {
+  background: linear-gradient(135deg, #6200ea, #4300BA);
+  color: white;
+  border-left: 3px solid #b388ff;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+}
+
+.fb-founder::before {
+  content: "🏛️";
+  margin-right: 0.3em;
+}
+
+/* 50. Manager */
+.fb-manager {
+  background: linear-gradient(135deg, #29b6f6, #0288d1);
+  color: white;
+  border-left: 3px solid #b3e5fc;
+}
+
+.fb-manager::before {
+  content: "📋";
+  margin-right: 0.3em;
+}
+
+/* 51. Designer */
+.fb-designer {
+  background: linear-gradient(135deg, #ec407a, #d81b60);
+  color: white;
+  border-left: 3px solid #f8bbd0;
+}
+
+.fb-designer::before {
+  content: "✏️";
+  margin-right: 0.3em;
+}
+
+/* 52. Tester */
+.fb-tester {
+  background: linear-gradient(135deg, #bdbdbd, #9e9e9e);
+  color: #424242;
+  border-left: 3px solid #f5f5f5;
+}
+
+.fb-tester::before {
+  content: "🔍";
+  margin-right: 0.3em;
+}
+
+/* 53. Supporter */
+.fb-supporter {
+  background: linear-gradient(135deg, #ff8a65, #ff5722);
+  color: white;
+  border-left: 3px solid #ffccbc;
+}
+
+.fb-supporter::before {
+  content: "🙌";
+  margin-right: 0.3em;
+}
+
+/* 54. Reviewer */
+.fb-reviewer {
+  background: linear-gradient(135deg, #9fa8da, #7986cb);
+  color: #1a237e;
+  border-left: 3px solid #e8eaf6;
+}
+
+.fb-reviewer::before {
+  content: "⭐";
+  margin-right: 0.3em;
+}
+
+/* 55. Builder */
+.fb-builder {
+  background: linear-gradient(135deg, #ff7043, #f4511e);
+  color: white;
+  border-left: 3px solid #ffccbc;
+}
+
+.fb-builder::before {
+  content: "🔨";
+  margin-right: 0.3em;
+}
+
+/* 56. Architect */
+.fb-architect {
+  background: linear-gradient(135deg, #78909c, #546e7a);
+  color: white;
+  border-left: 3px solid #cfd8dc;
+}
+
+.fb-architect::before {
+  content: "📐";
+  margin-right: 0.3em;
+}
+
+/* 57. Influencer */
+.fb-influencer {
+  background: linear-gradient(135deg, #f06292, #ec407a);
+  color: white;
+  border-left: 3px solid #f8bbd0;
+}
+
+.fb-influencer::before {
+  content: "📣";
+  margin-right: 0.3em;
+}
+
+/* 58. Creator */
+.fb-creator {
+  background: linear-gradient(135deg, #64b5f6, #42a5f5);
+  color: #0d47a1;
+  border-left: 3px solid #bbdefb;
+}
+
+.fb-creator::before {
+  content: "✨";
+  margin-right: 0.3em;
+}
+
+/* 59. Strategist */
+.fb-strategist {
+  background: linear-gradient(135deg, #aed581, #9ccc65);
+  color: #33691e;
+  border-left: 3px solid #f1f8e9;
+}
+
+.fb-strategist::before {
+  content: "♟️";
+  margin-right: 0.3em;
+}
+
+/* 60. Leader */
+.fb-leader {
+  background: linear-gradient(135deg, #ffb300, #ffa000);
+  color: #4e342e;
+  border-left: 3px solid #fff8e1;
+}
+
+.fb-leader::before {
+  content: "🚩";
+  margin-right: 0.3em;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .fb-badge {
+    font-size: 0.75em;
+    padding: 0.2em 0.5em;
+  }
+} 
